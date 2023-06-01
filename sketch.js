@@ -1,7 +1,7 @@
 let motion = false;
 let ios = false;
 
-if (typeof DeviceMotionEvent.requestPermission === 'function') {
+(typeof DeviceMotionEvent.requestPermission === 'function')
   document.body.addEventListener('click', function() {
     DeviceMotionEvent.requestPermission()
       .then(function() {
@@ -13,9 +13,7 @@ if (typeof DeviceMotionEvent.requestPermission === 'function') {
         console.warn('DeviceMotionEvent not enabled', error);
       })
   })
-} else {
 
-}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
